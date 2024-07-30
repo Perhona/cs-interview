@@ -6,5 +6,5 @@
 서버를 접속하는 사용자들마다 접속 위치가 다르고 접속할 서버마다 상태가 다르다. 
 그래서 GSLB에서는 헬스체크를 통해 사용자가 접속하는 IP를 기준으로 최적의 서버로 안내한다.
 5. GSLB는 CDN이나 웹서버중 가장 상태가 좋은 서버의 IP를 DNS에게 알려주고 DNS는 다시 사용자에게 알려줌
-6. 사용자는 IP를 가지고 TCP 3 way hand shacking을 통해 CDN서버와 통신한다. https의 경우 SSL hand shake를 추가로 진행
+6. 사용자는 IP를 가지고 TCP 3 way hand shacking을 통해 서버와 통신한다. https의 경우 SSL hand shake를 추가로 진행
 7. 만약 CDN의 경우 사용자가 원하는 데이터가 없을 경우 네이버의 오리지널 서버로부터 최신 파일을 받아 사용자에게 제공
